@@ -9,7 +9,7 @@ public boolean ticTacToe(int[][] board) { // It receives a 2D array who simulate
 		int player1 = 1; // The same but with player one
 		int player2 = 2; // The same but with player two
 		
-		for (int i = 0; i < board.length; i++) { // For loop to select rows / columns
+	for (int i = 0; i < board.length; i++) { // For loop to select rows / columns
 			
 	        for (int j = 0; j < board[0].length; j++) { // The next loop to select the box in the row / column -> [i][j] = column - [j][i] = row
 	        	
@@ -41,9 +41,9 @@ public boolean ticTacToe(int[][] board) { // It receives a 2D array who simulate
 	        	if (verticalCounter == 3) victory = true; // If counter count 3 times, you are the winner
 	        	if (horizontalCounter == 3) victory = true; // Same as above
 	        }
-	        verticalSwitcher = 0; // For reseting switcher to 0
-	        horizontalSwitcher = 0; // Same as above
+		verticalSwitcher = 0; // For reseting switcher to 0
+		horizontalSwitcher = 0; // Same as above
 	        
-		}
-    	return victory; // Returns the victory value, true if you reach Tic Tac Toe or false if you do not
 	}
+    return victory; // Returns the victory value, true if you reach Tic Tac Toe or false if you do not
+}
