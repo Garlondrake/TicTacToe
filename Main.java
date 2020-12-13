@@ -1,13 +1,13 @@
 public boolean ticTacToe(int[][] board) { // It receives a 2D array who simulates a board at any dimension, I did it to be completely resizable. It do not count diagonal ones 
 		
-		boolean victory = false; // Boolean who indicates if the actual player won the round
-		int verticalCounter = 0; // Counter for vertical Tic Tac Toe
-		int horizontalCounter = 0; // Counter for horizontal Tic Tac Toe
-		int verticalSwitcher = 0; // It is a simple pivot who switches the value if next box is not the same as old one
-		int horizontalSwitcher = 0; // Same here
-		int empty = 0; // The value assigned in 2D array to difference an empty box of each others
-		int player1 = 1; // The same but with player one
-		int player2 = 2; // The same but with player two
+	boolean victory = false; // Boolean who indicates if the actual player won the round
+	int verticalCounter = 0; // Counter for vertical Tic Tac Toe
+	int horizontalCounter = 0; // Counter for horizontal Tic Tac Toe
+	int verticalSwitcher = 0; // It is a simple pivot who switches the value if next box is not the same as old one
+	int horizontalSwitcher = 0; // Same here
+	int empty = 0; // The value assigned in 2D array to difference an empty box of each others
+	int player1 = 1; // The same but with player one
+	int player2 = 2; // The same but with player two
 		
 	for (int i = 0; i < board.length; i++) { // For loop to select rows / columns
 			
@@ -36,11 +36,12 @@ public boolean ticTacToe(int[][] board) { // It receives a 2D array who simulate
 	        	}
 	        	
 	        	verticalCounter++; // For counting successive kind of boxes at vertical orientation
-				horizontalCounter++; // Same as above but the horizontal one
+			horizontalCounter++; // Same as above but the horizontal one
 				
 	        	if (verticalCounter == 3) victory = true; // If counter count 3 times, you are the winner
 	        	if (horizontalCounter == 3) victory = true; // Same as above
 	        }
+		
 		verticalSwitcher = 0; // For reseting switcher to 0
 		horizontalSwitcher = 0; // Same as above
 	        
